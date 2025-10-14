@@ -4,10 +4,12 @@ from Fizz_buzz import fizz_buzz
 
 class TestFizzBuzz(unittest.TestCase):
 
-    def test_affiche_commence_par_1(self):
+    def test_multiples_de_3(self):
         fb = fizz_buzz()
         resultat = fb.affiche()
-        self.assertTrue(resultat.startswith("1"))
+    # 3 est un multiple de 3 → doit être remplacé
+        self.assertIn("Fizz", resultat)
+        self.assertNotIn("3", resultat)
 
 
 if __name__ == "__main__":
