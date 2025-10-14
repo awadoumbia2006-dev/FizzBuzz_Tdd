@@ -4,4 +4,6 @@ class fizz_buzz:
 
     def affiche(self):
         resultat = ""
+        for i in range(1, 101):  # on génère tous les nombres
+            resultat += str(i)
         return resultat
