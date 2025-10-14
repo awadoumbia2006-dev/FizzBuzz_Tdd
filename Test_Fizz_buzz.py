@@ -1,10 +1,12 @@
 import unittest
 from Fizz_buzz import fizz_buzz
 
+
 class TestFizzBuzz(unittest.TestCase):
-    def test_affiche_existe(self):
+
+    def test_affiche_retourne_chaine(self):
         fb = fizz_buzz()
-        # On s'attend à ce que la méthode affiche() existe
-        # mais pour l'instant, elle n'existe pas → le test doit échouer
-        with self.assertRaises(AttributeError):
-            fb.affiche()
+        resultat = fb.affiche()
+        self.assertEqual(resultat, "")
+if __name__ == "__main__":
+    unittest.main()
