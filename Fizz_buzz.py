@@ -3,4 +3,5 @@ class fizz_buzz:
         pass
 
     def affiche(self):
-        pass
+        resultat = ""
+        return resultat

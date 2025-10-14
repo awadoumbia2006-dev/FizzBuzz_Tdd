@@ -4,7 +4,7 @@ from Fizz_buzz import fizz_buzz
 
 class TestFizzBuzz(unittest.TestCase):
 
-    def test_affiche_retourne_rien(self):
+    def test_affiche_retourne_retourne_vide(self):
         fb = fizz_buzz()
         resultat = fb.affiche()
         self.assertEqual(resultat, "")
