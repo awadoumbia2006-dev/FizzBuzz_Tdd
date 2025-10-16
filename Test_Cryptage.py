@@ -1,5 +1,5 @@
 import unittest
-from cryptage import Cryptage
+from Cryptage import Cryptage
 
 class TestCryptage(unittest.TestCase):
 
