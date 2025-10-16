@@ -1,6 +1,13 @@
+import string
+
 class Cryptage:
     def __init__(self):
-        pass
+        self.caracteres = string.ascii_letters + string.ascii_punctuation + string.digits + " "
+
 
     def crypt(self, message):
-        pass
+        resultat = ""
+        for char in message:
+            index = self.caracteres.index(char)
+            resultat += self.caracteres[(index + 1) % len(self.caracteres)]
+        return resultat

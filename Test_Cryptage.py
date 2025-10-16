@@ -7,3 +7,6 @@ class TestCryptage(unittest.TestCase):
         c = Cryptage()
         resultat = c.crypt("abc")
         self.assertEqual(resultat, "bcd")  # chaque lettre décalée de 1
+
+if __name__ == "__main__":
+    unittest.main()
