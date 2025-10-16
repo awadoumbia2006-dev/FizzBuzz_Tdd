@@ -16,5 +16,6 @@ class Cryptage:
             resultat += str(pas)
 
         return resultat
-
+    
+    
 
