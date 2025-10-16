@@ -2,7 +2,7 @@ import string
 
 class Cryptage:
     def __init__(self):
-        self.caracteres = string.ascii_letters + string.ascii_punctuation + string.digits + " "
+        self.caracteres = string.ascii_letters + string.punctuation + string.digits + " "
 
 
     def crypt(self, message):
