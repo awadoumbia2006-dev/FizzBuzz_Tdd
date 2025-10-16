@@ -15,6 +15,6 @@ class fizz_buzz:
                 resultat += str(i)
         return resultat
 
-    def affiche(self, n=15):
+    def affiche(self, n=100):
         print(self.get_resultat(n))
         return self.get_resultat(n)
