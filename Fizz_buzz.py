@@ -2,9 +2,9 @@ class fizz_buzz:
     def __init__(self):
         pass
 
-    def get_resultat(self, n):
+    def affiche(self, n1=1, n2=100):  # ✅ accepte maintenant 2 paramètres
         resultat = ""
-        for i in range(1, n + 1):
+        for i in range(n1, n2 + 1):
             if i % 15 == 0:
                 resultat += "FrisBee"
             elif i % 3 == 0:
@@ -14,7 +14,3 @@ class fizz_buzz:
             else:
                 resultat += str(i)
         return resultat
-
-    def affiche(self, n=100):
-        print(self.get_resultat(n))
-        return self.get_resultat(n)

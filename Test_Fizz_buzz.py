@@ -4,18 +4,12 @@ from Fizz_buzz import fizz_buzz
 
 class TestFizzBuzz(unittest.TestCase):
 
-    def test_multiples_de_3(self):
+    def test_affiche_entre_deux_valeurs(self):
         fb = fizz_buzz()
-        resultat = fb.affiche()
-    # 3 est un multiple de 3 → doit être remplacé
-        self.assertIn("Fizz", resultat)
-        #self.assertNotIn("3", resultat)
+        resultat = fb.affiche(5, 10)
+        attendu = "BuzzFizz78FizzBuzz"
+        self.assertEqual(resultat, attendu)
 
-        self.assertEqual(fb.affiche(),"12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee1617Fizz" \
-        "19BuzzFizz2223FizzBuzz26Fizz2829FrisBee3132Fizz34BuzzFizz3738FizzBuzz41Fizz4344" \
-        "FrisBee4647Fizz49BuzzFizz5253FizzBuzz56Fizz5859FrisBee6162Fizz64BuzzFizz6768" \
-        "FizzBuzz71Fizz7374FrisBee7677Fizz79BuzzFizz8283FizzBuzz86Fizz8889FrisBee9192" \
-        "Fizz94BuzzFizz9798FizzBuzz")
 
 if __name__ == "__main__":
     unittest.main()
